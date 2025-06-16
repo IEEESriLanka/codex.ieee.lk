@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeX Sri Lanka - Coming Soon</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #0f1419 0%, #1e3a5f 50%, #2c5282 100%);
+            color: #ffffff;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            overflow-x: hidden;
+            padding: 3rem;
+        }
+
+        .container {
+            text-align: center;
+            z-index: 1;
+            max-width: 900px;
+            padding: 3rem 2rem;
+            backdrop-filter: blur(20px);
+            background: rgba(30, 58, 95, 0.3);
+            border-radius: 24px;
+            border: 1px solid rgba(169, 169, 169, 0.2);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+        }
+
+        .logo {
+            width: 180px;
+            height: auto;
+            margin-bottom: 2rem;
+            filter: drop-shadow(0 8px 16px rgba(0, 0, 0, 0.3));
+            transition: transform 0.3s ease;
+        }
+
+        .logo:hover {
+            transform: scale(1.05);
+        }
+
+        .coming-soon {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #a9a9a9;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            animation: pulse 2s ease-in-out infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% {
+                opacity: 1;
+                transform: scale(1);
+            }
+            50% {
+                opacity: 0.7;
+                transform: scale(1.05);
+            }
+        }
+
+        h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            background: linear-gradient(45deg, #ffffff, #a9a9a9, #e6e6e6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            line-height: 1.2;
+        }
+
+        .tagline {
+            font-size: 1.3rem;
+            color: #a9a9a9;
+            margin-bottom: 3rem;
+            font-weight: 300;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        .description {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #e6f3ff;
+            margin-bottom: 3rem;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+            opacity: 0.9;
+        }
+
+        .highlight {
+            color: #a9a9a9;
+            font-weight: 600;
+        }
+
+        .cta-section {
+            margin-top: 3rem;
+            padding: 2rem;
+            background: rgba(169, 169, 169, 0.1);
+            border-radius: 20px;
+            border: 1px solid rgba(169, 169, 169, 0.3);
+        }
+
+        .cta-text {
+            color: #e6f3ff;
+            margin-bottom: 2rem;
+            font-weight: 500;
+        }
+        
+        .cta-text strong {
+            font-size: 1.2rem;
+        }
+
+        .whatsapp-btn {
+            display: inline-block;
+            background: linear-gradient(45deg, #25d366, #128c7e);
+            color: white;
+            text-decoration: none;
+            padding: 1.2rem 2.5rem;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 8px 24px rgba(37, 211, 102, 0.3);
+            border: 2px solid rgba(169, 169, 169, 0.2);
+        }
+
+        .whatsapp-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 32px rgba(37, 211, 102, 0.4);
+            border-color: rgba(169, 169, 169, 0.4);
+        }
+
+        .competitions {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 1rem;
+            margin: 2rem 0;
+        }
+
+        .competition {
+            background: rgba(44, 82, 130, 0.3);
+            padding: 1.5rem 1rem;
+            border-radius: 12px;
+            border: 1px solid rgba(169, 169, 169, 0.2);
+            transition: all 0.3s ease;
+        }
+
+        .competition:hover {
+            transform: translateY(-4px);
+            background: rgba(44, 82, 130, 0.5);
+        }
+
+        .competition h4 {
+            color: #a9a9a9;
+            margin-bottom: 0.5rem;
+            font-size: 1.1rem;
+            font-weight: 600;
+        }
+
+        .competition p {
+            color: #e6f3ff;
+            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+
+        .footer {
+            position: absolute;
+            bottom: 1.5rem;
+            text-align: center;
+            color: white;
+            font-size: 0.8rem;
+            opacity: 0.7;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                margin: 1rem;
+                padding: 2rem 1.5rem;
+            }
+            
+            h1 {
+                font-size: 2.5rem;
+            }
+            
+            .coming-soon {
+                font-size: 1rem;
+            }
+            
+            .logo {
+                width: 150px;
+            }
+            
+            .description {
+                font-size: 1rem;
+            }
+
+            .competitions {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img class="logo" src="logo.jpeg" alt="CodeX Sri Lanka Logo">
+        
+        <div class="coming-soon">Coming Soon</div>
+        <h1>CodeX Sri Lanka</h1>
+        <div class="tagline">From Logic to Legacy</div>
+        
+        <div class="description">
+            Welcome to the Official Platform of <span class="highlight">CodeX Sri Lanka!</span> This is your ultimate destination for everything related to competitive programming in Sri Lanka, powered by the IEEE Sri Lanka Section.
+            <br><br>
+            Stay updated on thrilling competitions, training sessions, and opportunities designed to sharpen your problem-solving skills, enhance your algorithmic thinking, and propel you onto the global coding stage!
+            <br><br>
+            Join us and become part of a vibrant community passionate about logic, creativity, and coding excellence. Let's shape the future of competitive programming in Sri Lanka together!
+        </div>
+
+        <div class="competitions">
+            <div class="competition">
+                <h4>NOI</h4>
+                <p>National Olympiad in Informatics - Gateway to represent Sri Lanka at IOI</p>
+            </div>
+            <div class="competition">
+                <h4>ICPC</h4>
+                <p>International Collegiate Programming Contest - World's premier programming contest</p>
+            </div>
+            <div class="competition">
+                <h4>IEEEXtreme</h4>
+                <p>24-hour global coding hackathon for IEEE student members</p>
+            </div>
+        </div>
+
+        <div class="cta-section">
+            <div class="cta-text">
+                <strong>Stay curious, stay competitive!</strong><br><br>
+                Be the first to know when we launch and get instant updates on upcoming contests and events.
+            </div>
+            <a href="https://whatsapp.com/channel/0029VbB9vyIHbFV7qVYULT41" class="whatsapp-btn" target="_blank">
+                📱 Join WhatsApp Channel
+            </a>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2025 CodeX Sri Lanka - IEEE Sri Lanka Section. All rights reserved.</p>
+    </div>
+</body>
+</html>
