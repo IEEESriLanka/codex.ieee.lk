@@ -259,7 +259,7 @@ export default function AboutSection() {
                       3
                     </span>
                     <h4 className="text-lg font-semibold text-white">
-                      IEEEXtreme 19.0
+                      IEEEXtreme
                     </h4>
                   </div>
                   <p className="text-gray-300 text-sm">
