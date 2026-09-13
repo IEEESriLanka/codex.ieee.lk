@@ -53,31 +53,31 @@ export default function TimelineSection() {
   // Minimized events (5 condensed key milestones)
   const minimizedEvents = [
     { 
-      date: "Feb-May 2025", 
-      title: "NOI 2025 Complete Cycle", 
+      date: "Feb-May 2026", 
+      title: "NOI 2026 Complete Cycle", 
       description: "Full NOI cycle: Registration → Qualifiers → National Finals → IOI Team Selection", 
       status: "past",
       icon: <Trophy className="h-4 w-4" />,
-      detailedInfo: "Complete National Olympiad in Informatics cycle including registration (February), two qualifier rounds (March-April), and national finals (May) to select the 4-member Sri Lankan team for IOI 2025."
+      detailedInfo: "Complete National Olympiad in Informatics cycle including registration (February), two qualifier rounds (March-April), and national finals (May) to select the 4-member Sri Lankan team for IOI 2026."
     },
     { 
-      date: "Jun-Sep 2025", 
+      date: "Aug 2026 onwards", 
       title: "12-Session Training Series", 
       description: "Comprehensive competitive programming training from basics to advanced algorithms", 
-      status: "future",
+      status: "current",
       icon: <BookOpen className="h-4 w-4" />,
       detailedInfo: "Weekly training sessions covering all essential competitive programming topics from introduction to advanced algorithms like dynamic programming and graph theory."
     },
     { 
-      date: "Oct 2025", 
-      title: "IEEEXtreme 19.0", 
+      date: "Oct 2026", 
+      title: "IEEEXtreme 20.0", 
       description: "24-hour global programming competition for IEEE student members", 
       status: "future",
       icon: <Code className="h-4 w-4" />,
       detailedInfo: "Global 24-hour programming competition where teams of IEEE student members compete to solve algorithmic problems from designated centers."
     },
     { 
-      date: "Oct-Dec 2025", 
+      date: "Oct-Dec 2026", 
       title: "ICPC Regional Cycle", 
       description: "National selections followed by Asia Regional Contest", 
       status: "future",
@@ -85,67 +85,67 @@ export default function TimelineSection() {
       detailedInfo: "University teams compete in national selections to qualify for the ICPC Asia Regional Contest, with potential advancement to World Finals."
     },
     { 
-      date: "Feb 2026", 
-      title: "NOI 2026 & Awards", 
+      date: "Feb 2027", 
+      title: "NOI 2027 & Awards", 
       description: "Next NOI cycle begins + Annual recognition ceremony", 
       status: "future",
       icon: <Award className="h-4 w-4" />,
-      detailedInfo: "NOI 2026 registration opens alongside annual awards ceremony recognizing achievements with scholarships and opportunities."
+      detailedInfo: "NOI 2027 registration opens alongside annual awards ceremony recognizing achievements with scholarships and opportunities."
     }
   ];
 
   // Maximized events (8 detailed events)
   const maximizedEvents = [
     { 
-      date: "February 2025", 
-      title: "NOI 2025 Registration Opens", 
-      description: "Registration begins for the National Olympiad in Informatics 2025.", 
+      date: "February 2026", 
+      title: "NOI 2026 Registration Opens", 
+      description: "Registration begins for the National Olympiad in Informatics 2026.", 
       status: "past",
       icon: <Trophy className="h-4 w-4" />,
-      detailedInfo: "Registration for NOI 2025 opened to all secondary school students across Sri Lanka. Students could register through their schools or individually online."
+      detailedInfo: "Registration for NOI 2026 opened to all secondary school students across Sri Lanka. Students could register through their schools or individually online."
     },
     { 
-      date: "March 15, 2025", 
-      title: "NOI 2025 Qualifier Round 1", 
-      description: "First qualifying round for NOI 2025 - online contest.", 
+      date: "March 14, 2026", 
+      title: "NOI 2026 Qualifier Round 1", 
+      description: "First qualifying round for NOI 2026 - online contest.", 
       status: "past",
       icon: <Trophy className="h-4 w-4" />,
       detailedInfo: "The first qualifier was an online contest lasting 3 hours with 4-5 problems of varying difficulty. Students competed from their schools or designated centers."
     },
     { 
-      date: "April 12, 2025", 
-      title: "NOI 2025 Qualifier Round 2", 
-      description: "Second qualifying round for NOI 2025 - advanced problems.", 
+      date: "April 11, 2026", 
+      title: "NOI 2026 Qualifier Round 2", 
+      description: "Second qualifying round for NOI 2026 - advanced problems.", 
       status: "past",
       icon: <Trophy className="h-4 w-4" />,
       detailedInfo: "The second qualifier featured more challenging algorithmic problems. Top performers from Round 1 advanced to compete in this round."
     },
     { 
-      date: "May 10, 2025", 
-      title: "NOI 2025 National Finals", 
-      description: "National finals to select the Sri Lankan team for IOI 2025.", 
+      date: "May 9, 2026", 
+      title: "NOI 2026 National Finals", 
+      description: "National finals to select the Sri Lankan team for IOI 2026.", 
       status: "past",
       icon: <Trophy className="h-4 w-4" />,
       detailedInfo: "The national finals consisted of two 5-hour contests held over two days. The top 4 students were selected to represent Sri Lanka at the International Olympiad in Informatics."
     },
     { 
-      date: "Jun-Sep 2025", 
+      date: "Aug 2026 onwards", 
       title: "12-Session Training Series", 
       description: "Comprehensive competitive programming training from basics to advanced algorithms", 
-      status: "future",
+      status: "current",
       icon: <BookOpen className="h-4 w-4" />,
       detailedInfo: "Weekly training sessions covering: Introduction to CP, Complexity Analysis, Arrays & Prefix Sums, Sorting, Two-Pointers, Binary Search, Greedy Algorithms, Recursion & Backtracking, Dynamic Programming (2 parts), Graph Theory, and Trees & DSU."
     },
     { 
-      date: "October 2025", 
-      title: "IEEEXtreme 19.0", 
+      date: "October 2026", 
+      title: "IEEEXtreme 20.0", 
       description: "24-hour global programming competition for IEEE student members", 
       status: "future",
       icon: <Code className="h-4 w-4" />,
       detailedInfo: "Global 24-hour programming competition where teams of IEEE student members compete to solve algorithmic problems. Sri Lankan teams will participate from designated competition centers."
     },
     { 
-      date: "Oct-Dec 2025", 
+      date: "Oct-Dec 2026", 
       title: "ICPC Regional Cycle", 
       description: "National selections followed by Asia Regional Contest", 
       status: "future",
@@ -153,12 +153,12 @@ export default function TimelineSection() {
       detailedInfo: "University teams compete in national selections (October-November) to qualify for the ICPC Asia Regional Contest (December). Winning teams may advance to the ICPC World Finals."
     },
     { 
-      date: "February 2026", 
-      title: "NOI 2026 & Awards Ceremony", 
+      date: "February 2027", 
+      title: "NOI 2027 & Awards Ceremony", 
       description: "Next NOI cycle begins + Annual recognition ceremony", 
       status: "future",
       icon: <Award className="h-4 w-4" />,
-      detailedInfo: "NOI 2026 registration opens and the annual awards ceremony recognizing outstanding achievements across all CodeX competitions and training sessions, with scholarships and internship opportunities."
+      detailedInfo: "NOI 2027 registration opens and the annual awards ceremony recognizing outstanding achievements across all CodeX competitions and training sessions, with scholarships and internship opportunities."
     }
   ];
 

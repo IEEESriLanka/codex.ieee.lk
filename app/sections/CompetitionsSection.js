@@ -28,15 +28,23 @@ export default function CompetitionsSection() {
     {
       name: "National Olympiad in Informatics (NOI)",
       description: "An annual algorithmic programming contest to select the national team for the International Olympiad in Informatics (IOI). Participants tackle complex computational problems requiring algorithmic thinking and coding skills.",
-      timeline: "February to June 2025",
+      timeline: "February to June 2026",
       eligibility: "Open to all Sri Lankan school students",
       logo: "/images/noi.png",
       website: "https://www.noi.lk/" // Official NOI website
     },
     {
-      name: "IEEEXtreme 19.0",
+      name: "Sri Lanka Artificial Intelligence Olympiad (SLAIO)",
+      description: "An annual IoT-based Artificial Intelligence contest to select the national team for the International Olympiad in Informatics (IAIO). Participants solve complex problems related to Artificial Intelligence within the given time limit.",
+      timeline: "May to July 2026",
+      eligibility: "Open to all Sri Lankan school students",
+      logo: "/images/noi.png", // TODO: Replace with SLAIO logo when available
+      website: "https://www.slaio.org/"
+    },
+    {
+      name: "IEEEXtreme 20.0",
       description: "A global 24-hour hackathon where university teams compete in algorithm-based programming challenges. Develop skills in rapid problem-solving and collaborative coding under time pressure.",
-      timeline: "July to November 2025",
+      timeline: "July to November 2026",
       eligibility: "IEEE undergraduate and graduate members",
       logo: "/images/ieeextreme.png",
       website: "https://xtreme.ieee.lk/" // Official IEEEXtreme website
@@ -44,11 +52,12 @@ export default function CompetitionsSection() {
     {
       name: "International Collegiate Programming Contest (ICPC)",
       description: "The world's largest algorithmic competition for university students. Teams of three compete to solve complex real-world problems with elegant solutions under strict time constraints.",
-      timeline: "July to November 2025",
+      timeline: "July to November 2026",
       eligibility: "University students under 24 years of age",
       logo: "/images/icpc.png",
       website: "https://icpc.global/" // Official ICPC website
     }
+    // TODO: Update the OC (Organizing Committee) once the information is available (Change #5)
   ];
 
   return (
@@ -67,7 +76,7 @@ export default function CompetitionsSection() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 xl:grid-cols-4 gap-8">
           {competitions.map((competition, index) => (
             <div 
               key={index}

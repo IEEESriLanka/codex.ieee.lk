@@ -8,6 +8,7 @@ import GlassCard from '@/app/components/GlassCard';
 export default function SponsorsSection() {
   const [isVisible, setIsVisible] = useState(false);
   const [hoveredSponsor, setHoveredSponsor] = useState(null);
+  const [particles, setParticles] = useState([]);
   
   // Intersection Observer to trigger animations when section comes into view
   useEffect(() => {
@@ -27,6 +28,20 @@ export default function SponsorsSection() {
     }
     
     return () => observer.disconnect();
+  }, []);
+
+  // Generate random particles on client side to prevent hydration errors
+  useEffect(() => {
+    const newParticles = Array.from({ length: 20 }).map(() => ({
+      width: `${3 + Math.random() * 8}px`,
+      height: `${3 + Math.random() * 8}px`,
+      left: `${Math.random() * 100}%`,
+      top: `${Math.random() * 100}%`,
+      opacity: 0.1 + Math.random() * 0.2,
+      animationDelay: `${Math.random() * 4}s`,
+      animationDuration: `${3 + Math.random() * 4}s`
+    }));
+    setParticles(newParticles);
   }, []);
 
   // Sponsor data
@@ -72,19 +87,19 @@ export default function SponsorsSection() {
       
       {/* Animated background elements */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        {Array.from({ length: 20 }).map((_, index) => (
+        {particles.map((particle, index) => (
           <div 
             key={index}
             className="absolute rounded-full animate-pulse"
             style={{
-              width: `${3 + Math.random() * 8}px`,
-              height: `${3 + Math.random() * 8}px`,
-              left: `${Math.random() * 100}%`,
-              top: `${Math.random() * 100}%`,
-              opacity: 0.1 + Math.random() * 0.2,
+              width: particle.width,
+              height: particle.height,
+              left: particle.left,
+              top: particle.top,
+              opacity: particle.opacity,
               backgroundColor: '#3b82f6',
-              animationDelay: `${Math.random() * 4}s`,
-              animationDuration: `${3 + Math.random() * 4}s`
+              animationDelay: particle.animationDelay,
+              animationDuration: particle.animationDuration
             }}
           ></div>
         ))}

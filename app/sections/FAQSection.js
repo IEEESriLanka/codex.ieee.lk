@@ -39,12 +39,12 @@ export default function FAQSection() {
   const faqs = [
     { 
       question: "What is IEEE CodeX Sri Lanka?", 
-      answer: "IEEE CodeX Sri Lanka is the latest initiative by the IEEE Sri Lanka Section aimed at promoting competitive programming in Sri Lanka through various coding contests and training sessions. Our mission is to build a thriving tech community and develop world-class programming talent in Sri Lanka. We are actively engaged in facilitating three major competitive programming events: the National Olympiad in Informatics (NOI) 2025, IEEEXtreme 19.0, and the International Collegiate Programming Contest (ICPC) 2025. These competitions provide platforms for aspiring programmers to showcase their skills, learn from experts, and foster a strong programming culture within the country.",
+      answer: "IEEE CodeX Sri Lanka is the latest initiative by the IEEE Sri Lanka Section aimed at promoting competitive programming in Sri Lanka through various coding contests and training sessions. Our mission is to build a thriving tech community and develop world-class programming talent in Sri Lanka. We are actively engaged in facilitating three major competitive programming events: the National Olympiad in Informatics (NOI), Sri Lanka Artificial Intelligence Olympiad (SLAIO), IEEEXtreme, and the International Collegiate Programming Contest (ICPC). These competitions provide platforms for aspiring programmers to showcase their skills, learn from experts, and foster a strong programming culture within the country.",
       category: "general"
     },
     { 
       question: "How can I participate in the competitions?", 
-      answer: "Participants can register for the National Olympiad in Informatics (NOI), IEEEXtreme 19.0, and ICPC through the respective official websites once registrations open. For NOI, students need to register through their schools, often with the guidance of a teacher or academic coordinator. For IEEEXtreme 19.0, you must be an IEEE member to be eligible to participate, ensuring you meet this prerequisite before attempting to register. For ICPC, your university team coach will need to register your team, highlighting the team-based nature of this competition and the need for institutional support.", 
+      answer: "Participants can register for the National Olympiad in Informatics (NOI), Sri Lanka Artificial Intelligence Olympiad (SLAIO), IEEEXtreme, and ICPC through the respective official websites once registrations open. For NOI, students need to register through their schools, often with the guidance of a teacher or academic coordinator. For IEEEXtreme, you must be an IEEE member to be eligible to participate, ensuring you meet this prerequisite before attempting to register. For ICPC, your university team coach will need to register your team, highlighting the team-based nature of this competition and the need for institutional support.", 
       category: "participation"
     },
     { 
@@ -54,7 +54,7 @@ export default function FAQSection() {
     },
     { 
       question: "Who can participate in these competitions?", 
-      answer: "Competitions like IEEEXtreme 19.0 and the International Collegiate Programming Contest (ICPC) are open to university students, while the National Olympiad in Informatics (NOI) is geared towards secondary school students. Age restrictions may apply for certain competitions, particularly for international advancement. For instance, NOI participants must be under 20 years of age, and ICPC is typically open to undergraduate students under the age of 24. These guidelines ensure fair competition and alignment with global standards.", 
+      answer: "Competitions like IEEEXtreme and the International Collegiate Programming Contest (ICPC) are open to university students, while the National Olympiad in Informatics (NOI) and Sri Lanka Artificial Intelligence Olympiad (SLAIO) are geared towards secondary school students. Age restrictions may apply for certain competitions, particularly for international advancement. For instance, NOI and SLAIO participants must be under 20 years of age, and ICPC is typically open to undergraduate students under the age of 24. These guidelines ensure fair competition and alignment with global standards.", 
       category: "eligibility"
     },
     { 
